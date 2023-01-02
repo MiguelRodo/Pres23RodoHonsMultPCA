@@ -1,0 +1,13 @@
+Package: Pres23RodoHonsMultPCA
+Title: PCA slides for stats honours multivariate module 2023
+Version: 0.0.0-1
+Authors@R: 
+    person("Miguel", "Rodo", , "rdxmig002@myuct.ac.za", role = c("aut", "cre"))
+Maintainer: Miguel Rodo <rdxmig002@myuct.ac.za>
+Description: PCA slides for stats honours multivariate module 202
+License: file LICENSE
+URL: https://github.com/MiguelRodo/Pres23RodoHonsMultPCA/#readme
+BugReports: https://github.com/MiguelRodo/Pres23RodoHonsMultPCA/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2

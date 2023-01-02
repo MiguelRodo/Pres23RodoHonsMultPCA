@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Pres23RodoHonsMultPCA
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Pres23RodoHonsMultPCA is to create slides for the PCA section of the stats honours multivariate module 2023.
+
+## Installation
+
+You can install the development version of Pres23RodoHonsMultPCA like so:
+
+``` r
+if (!requireNamespace("devtools")) install.packages("devtools")
+devtools::install_github("MiguelRodo/Pres23RodoHonsMultPCA")
+```
+
