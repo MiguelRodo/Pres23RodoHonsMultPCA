@@ -1,1 +1,5 @@
 library(projr)
+library(devtools)
+library(httpgd)
+library(languageserver)
+library(jsonlite)
