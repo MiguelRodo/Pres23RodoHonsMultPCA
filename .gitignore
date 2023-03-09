@@ -8,3 +8,15 @@
 docs/**/*
 _bookdown_files/**/*
 
+_data_raw/**/*
+
+
+_tmp/**/*
+
+
+_output/**/*
+
+
+_archive/**/*
+
+

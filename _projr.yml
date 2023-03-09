@@ -1,31 +1,31 @@
-# default directory settings:
 directories:
   data-raw:
     path: _data_raw
-    output: true
-  cache: 
+    output: yes
+  cache:
     path: _tmp
-  output: 
+  output:
     path: _output
-  archive: 
+  archive:
     path: _archive
   docs:
-    output: true
-
+    output: yes
+    path: docs
 build:
-  dev-output: true
-  package: false
+  dev-output: yes
+  package: no
   git:
-    commit: true
-    add-untracked: true
-    push: false
+    commit: yes
+    add-untracked: yes
+    push: no
   github-release:
     '@version':
       content: code
-      body: "Latest source code"
+      body: Latest source code
     input:
-      content: [data-raw]
-      body: "Project inputs"
+      content: data-raw
+      body: Project inputs
     output:
-      content: [output]
-      body: "Project outputs"
+      content: output
+      body: Project outputs
+

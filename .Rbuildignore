@@ -6,3 +6,15 @@
 ^_bookdown_files
 
 ^README\.Rmd$
+^_data_raw
+
+
+^_tmp
+
+
+^_output
+
+
+^_archive
+
+
