@@ -1,0 +1,1 @@
+cp -r "$w_proj/Project23RodoHonsMult/Pres23RodoHonsMultPCA/_output_manual" /home/mrodo/work/projects/Comp23RodoHonsMult/Pres23RodoHonsMultPCA/
