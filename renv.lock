@@ -1238,14 +1238,14 @@
     },
     "projr": {
       "Package": "projr",
-      "Version": "0.0.8.9018",
+      "Version": "0.0.8.9019",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "SATVILab",
       "RemoteRepo": "projr",
       "RemoteRef": "main",
-      "RemoteSha": "982df00190c443f8f1c1535e72884a80d699a230",
+      "RemoteSha": "e0ff0eca5cd7347c7b00430df19426bfc004e787",
       "Requirements": [
         "bookdown",
         "desc",
@@ -1262,7 +1262,7 @@
         "usethis",
         "yaml"
       ],
-      "Hash": "6c77d07be09d967a9ed35f2c08ca696c"
+      "Hash": "a228fbf48d0cf4551f06718da7311015"
     },
     "promises": {
       "Package": "promises",
