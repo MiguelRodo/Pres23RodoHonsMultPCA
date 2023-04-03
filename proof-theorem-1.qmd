@@ -1,0 +1,80 @@
+##  
+
+:::{#thm-max_quad_form}
+## Maximisation of quadratic forms for points on the unit sphere
+Let $\mathbf{B}:p\times p$ be a positive-definite matrix with the $i$-th largest eigenvalue $\lambda_i$ and associated eigenvector $\mathbf{e}_i$. Then we have that 
+
+$$
+\max_{\mathbf{x}\neq \mathbf{0}} \frac{\mathbf{x}'\mathbf{B}\mathbf{x}}{\mathbf{x}'\mathbf{x}}=\lambda_1 \; (\mathrm{attained}\; \mathrm{when} \; \mathbf{x}=\mathbf{e}_1)
+$$
+
+and that
+
+$$
+\max_{\mathbf{x}\neq \mathbf{0},\mathbf{x}\perp \mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_{i-1}} \frac{\mathbf{x}'\mathbf{B}\mathbf{x}}{\mathbf{x}'\mathbf{x}}=\lambda_i \; (\mathrm{attained}\; \mathrm{when} \; \mathbf{x}=\mathbf{e}_{i-1})
+$$
+
+for $i\in\{2,3, \ldots, p\}$.
+
+:::{.proof}
+
+Let $\mathbf{P}:p\times p$ be the orthogonal matrix whose $i$-th column is the $i$-th eigenvector and $\Lambda$ be the diagonal matrix with ordered eigenvalues along the diagonal. Let $\mathbf{B}^{1/2}=\mathbf{P}\mathbf{\Lambda}^{1/2}\mathbf{P}'$ and $\mathbf{y}=\mathbf{P}'\mathbf{x}$.
+
+First, we show that the quadratic form can never be larger than $\lambda_1$:
+
+$$
+\begin{align*} 
+\frac{\mathbf{x}'\mathbf{B}\mathbf{x}}{\mathbf{x}'\mathbf{x}} &=  \frac{\mathbf{x}'\mathbf{B}^{1/2}\mathbf{B}^{1/2}\mathbf{x}}{\mathbf{x}'\mathbf{P}\mathbf{P}'\mathbf{x}} 
+= \frac{\mathbf{x}'\mathbf{P}\mathbf{\Lambda}^{1/2}\mathbf{P}'\mathbf{P}\mathbf{\Lambda}^{1/2}\mathbf{P}'\mathbf{x}}{\mathbf{y}'\mathbf{y}}
+=  \frac{\mathbf{y}'\mathbf{\Lambda}\mathbf{y}}{\mathbf{y}'\mathbf{y}} \\ 
+ &=  \frac{\sum_{i=1}^p\lambda_iy_i^2}{\sum_{i=1}^py_i^2} 
+ \leq \lambda_1 \frac{\sum_{i=1}^py_i^2}{\sum_{i=1}^py_i^2}
+ = \lambda_1 
+\end{align*}
+$$
+
+Now we show that this is actually attained for $\mathbf{x}=\mathbf{e}_1$. Since eigenvectors are by convention length 1, we consider $\mathbf{e}_1'\mathbf{B}\mathbf{e}_1$.
+
+First, let $\mathbf{c}_i$ be the unit vector with a 1 in the $i$-th position (and 0's everywhere else).
+
+Expanding $\mathbf{B}$ by the eigen decomposition, we have that
+
+$$
+\mathbf{e}_1'\mathbf{B}\mathbf{e}_1=\mathbf{e}_1'\mathbf{P}\mathbf{\Lambda}\mathbf{P}'\mathbf{e}_1.
+$$
+
+Since $B$ is symmetric, the eigenvectors can be chosen orthogonal.
+We do so, which implies that $\mathbf{e}_i'P=\mathbf{c}_i'$.
+Consequently,
+
+$$
+\mathbf{e}_i'\mathbf{P}\mathbf{\Lambda}\mathbf{P}'\mathbf{e}_i
+= \mathbf{c}_i'\mathbf{\Lambda}\mathbf{c}_i=\lambda_i,
+$$
+
+and so $\mathbf{e}_1'\mathbf{P}\mathbf{\Lambda}\mathbf{P}'\mathbf{e}_1=\lambda_1$.
+
+Now, we consider the case where $\mathbf{x}$ is orthogonal to $\mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_{i-1}$.
+
+Each component in the vector $\mathbf{y}$ is the dot product of $x$ and an eigenvector $\mathbf{e}_i$.
+Since we choose $x$ orthogonal to the first $i-1$ eignvectors, the first $i-1$ entries of $\mathbf{y}$ are zero.
+
+Returning to considering the quadratic form, we have that
+
+$$
+\begin{align}
+\frac{\mathbf{x}'\mathbf{B}\mathbf{x}}{\mathbf{x}'\mathbf{x}} 
+&= \frac{\sum_{j=1}^p\lambda_jy_j^2}{\sum_{j=1}^py_j^2} \\
+&= \frac{\sum_{j=i}^p\lambda_jy_j^2}{\sum_{j=i}^py_j^2} 
+ \leq \lambda_i \frac{\sum_{j=i}^py_j^2}{\sum_{j=i}^py_j^2} 
+ = \lambda_i
+\end{align}
+$$
+
+Using the same argument as above, we can show that this is actually attained for $\mathbf{x}=\mathbf{e}_i$.
+
+:::
+
+
+
+:::
