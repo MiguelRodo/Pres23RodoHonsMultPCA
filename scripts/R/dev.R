@@ -14,6 +14,7 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
   }
 }
 if (requireNamespace("targets", quietly = TRUE)) {
+  library(targets)
   t_r <- targets::tar_read
   t_l <- targets::tar_load
   t_m <- function() tar_meta(fields = error, complete_only = TRUE)

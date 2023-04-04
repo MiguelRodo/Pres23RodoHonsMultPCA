@@ -44,7 +44,7 @@ $$
 $$
 
 Since $B$ is symmetric, the eigenvectors can be chosen orthogonal.
-We do so, which implies that $\mathbf{e}_i'P=\mathbf{c}_i'$.
+We do so, which implies that $\mathbf{e}_i'P=\mathbf{c}_i'$, where $\mathbf{c}_i$ is the unit vector with a 1 in the $i$-th position (and 0 everwhere else).
 Consequently,
 
 $$
