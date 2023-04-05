@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.2",
+    "Version": "4.2.3",
     "Repositories": [
       {
         "Name": "RSPM",
@@ -1238,14 +1238,14 @@
     },
     "projr": {
       "Package": "projr",
-      "Version": "0.0.8.9019",
+      "Version": "0.0.8.9046",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "SATVILab",
       "RemoteRepo": "projr",
       "RemoteRef": "main",
-      "RemoteSha": "e0ff0eca5cd7347c7b00430df19426bfc004e787",
+      "RemoteSha": "5db7cb5f54fbde10375b257ddb5f0068cbab88ad",
       "Requirements": [
         "bookdown",
         "desc",
@@ -1262,7 +1262,7 @@
         "usethis",
         "yaml"
       ],
-      "Hash": "a228fbf48d0cf4551f06718da7311015"
+      "Hash": "798b4b87be330f931e64507dd7b13b6a"
     },
     "promises": {
       "Package": "promises",
