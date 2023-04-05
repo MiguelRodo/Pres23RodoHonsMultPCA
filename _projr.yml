@@ -4,6 +4,9 @@ directories:
     output: yes
   cache:
     path: _tmp
+    ignore: false
+  cache-scripts:
+    path: _tmp_scripts
   output:
     path: _output
   archive:

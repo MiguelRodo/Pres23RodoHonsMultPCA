@@ -1,0 +1,53 @@
+
+## {background-image="_output_manual/fig-tool_context_example.png" background-size="contain"}
+
+:::{.notes}
+- Check what Stefan said about the purpose of the course
+:::
+
+
+## Introduction to principal components analysis
+
+```{r}
+#| label: intro-tar_make
+#| include: false
+Sys.setenv("TAR_PROJECT" = "intro")
+tar_make(callr_function = NULL)
+path_p_intro <- tar_read(path_p_intro_cache)
+```
+
+```{r}
+#| results: asis
+pander::pandoc.image(
+  file.path("_tmp", paste0(path_p_intro, ".png"))
+)
+```
+
+
+## Describe the data
+
+:::{.notes}
+- Multivariate analysis is defined by the approach it takes to analysing multivariate data
+:::
+
+## Example applications
+
+## Maximise quadratic form
+
+## PCAs formed by eigenvectors
+
+## PCAs maximise variance
+
+## Relationship between components and original variables
+
+- Loadings
+- Correlation
+
+## Approximation to original matrix
+
+:::{.notes}
+- **Question**
+  - How is this obtained?
+:::
+
+## Biplots
