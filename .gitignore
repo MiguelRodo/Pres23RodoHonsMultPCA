@@ -5,7 +5,6 @@
 .Ruserdata
 
 # docs
-docs/**/*
 _bookdown_files/**/*
 
 _data_raw/**/*
@@ -21,5 +20,8 @@ _archive/**/*
 
 
 _tmp/**/*
+
+
+docs/**/*
 
 
