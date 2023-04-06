@@ -1,6 +1,6 @@
 Package: Pres23RodoHonsMultPCA
 Title: PCA slides for stats honours multivariate module 2023
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Miguel", "Rodo", , "rdxmig002@myuct.ac.za", role = c("aut", "cre"))
 Maintainer: Miguel Rodo <rdxmig002@myuct.ac.za>
 Description: PCA slides for stats honours multivariate module 2023
